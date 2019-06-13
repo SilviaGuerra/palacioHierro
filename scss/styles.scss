@@ -1,0 +1,45 @@
+$font: 'Montserrat', sans-serif;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
+  &_cards{
+    display: flex;
+    justify-content: space-around;
+    > article{
+      width: 50%;
+      margin: 10px;
+      padding: 10px
+    }
+  }
+}
+
+div:nth-child(1){
+  height: 400px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: blueviolet;
+}
+
+.card{
+  &_button{
+    &-bkgtrans{
+      margin-top: 18%
+    }
+    &-bkgblack{
+      margin-bottom: 2%
+    }
+  }
+}
